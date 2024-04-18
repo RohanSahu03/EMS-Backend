@@ -40,7 +40,7 @@ public class MailServiceImpl implements MailService {
 			
 			helper.setText(m1+"""
 					<div>
-	                    <a href="http://localhost:3000/resetPassword?email=%s" target="_blank">Click this link to reset password</a>
+	                    <a href="http://localhost:3000/forgot-password?email=%s" target="_blank">Click this link to reset password</a>
 	                </div>
 					""".formatted(email),true);
 			mail.send(message);
